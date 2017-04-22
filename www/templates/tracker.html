@@ -1,0 +1,26 @@
+<ion-view view-title="Tracker">
+  <ion-content>
+
+    <ul class="list">
+      <li class="item item-toggle">
+         Tracker control
+         <label class="toggle toggle-balanced">
+           <input type="checkbox">
+           <div class="track">
+             <div class="handle"></div>
+           </div>
+         </label>
+      </li>
+    </ul>
+
+    <div class="card">
+      <div class="item item-divider">Current position</div>
+      <div class="item item-text-wrap">
+        <div>Latitude: <span id="lat">waiting for GPS signal...</span></div>
+        <div>Longitude: <span id="lng"> waiting for GPS signal...</span></div>
+        <div>Timestamp: <span id="timestamp"> waiting for GPS signal...</span></div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
