@@ -1,26 +1,32 @@
 {
-  "name": "jagt",
-  "version": "1.1.1",
-  "description": "jagt: Just Another GPS Tracker",
-  "dependencies": {
-    "gulp": "^3.5.6",
-    "gulp-sass": "^2.0.4",
-    "gulp-concat": "^2.2.0",
-    "gulp-minify-css": "^0.3.0",
-    "gulp-rename": "^1.2.0"
-  },
-  "devDependencies": {
-    "bower": "^1.3.3",
-    "gulp-util": "^2.2.14",
-    "shelljs": "^0.3.0"
-  },
-  "cordovaPlugins": [
-    "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard",
-    "cordova-plugin-whitelist",
-    "cordova-plugin-console",
-    "cordova-plugin-statusbar",
-    "cordova-plugin-device"
-  ],
-  "cordovaPlatforms": []
+    "name": "jagt",
+    "version": "1.1.1",
+    "description": "jagt: Just Another GPS Tracker",
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "gulp": "^3.5.6",
+        "gulp-concat": "^2.2.0",
+        "gulp-minify-css": "^0.3.0",
+        "gulp-rename": "^1.2.0",
+        "gulp-sass": "^2.0.4"
+    },
+    "devDependencies": {
+        "bower": "^1.3.3",
+        "gulp-util": "^2.2.14",
+        "shelljs": "^0.3.0"
+    },
+    "cordovaPlugins": [
+        "cordova-plugin-splashscreen",
+        "ionic-plugin-keyboard",
+        "cordova-plugin-whitelist",
+        "cordova-plugin-console",
+        "cordova-plugin-statusbar",
+        "cordova-plugin-device"
+    ],
+    "cordovaPlatforms": [],
+    "cordova": {
+        "platforms": [
+            "android"
+        ]
+    }
 }

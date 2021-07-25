@@ -143,3 +143,14 @@ angular.module('starter.controllers', [])
     });
   });
 })
+
+
+.controller('SettingsCtrl', function($scope, $state) {
+  console.log("hello");
+  $scope.default = "Test!"
+
+  function getFormData(formSettings) {
+    console.log(formSettings);
+  }
+
+})

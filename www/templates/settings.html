@@ -1,5 +1,70 @@
 <ion-view view-title="Settings">
   <ion-content>
     <h1>Settings</h1>
+    <form name="formSettings" ng-submit="getFormData(formSettings)">
+      <input type="text" placeholder="name" ng-model="SettingsCtrl.default" />
+      <button class="button button-full button-positive" type="submit">GO</button>
+      <!-- <button type="submit" ng-click="getFormData(formSettings)">Submit</button> -->
+    </form>
+    {{ SettingsCtrl.default }}
   </ion-content>
 </ion-view>
+
+
+<!--
+<script id="home.html" type="text/ng-template">
+  <ion-view view-title="Second page">
+    <ion-content class="padding">
+        <h1>Welcome</h1>
+    </ion-content>
+  </ion-view>
+</script>
+-->
+
+<!--
+<script id="auth.html" type="text/ng-template">
+  <ion-view view-title="Authorization Page">
+    <ion-content class="padding">
+      <h2 style="text-align: center;">Form validation example</h2><br/>
+      <form name="authorizationForm" novalidate="" ng-submit="signIn(authorizationForm)">
+        <div class="list">
+          <label class="item item-input" ng-class="{ 'has-errors' : authorizationForm.username.$invalid, 'no-errors' : authorizationForm.username.$valid}">
+            <span class="input-label">Username</span>
+            <input type="text" name="username" ng-model="authorization.username" ng-minlength="5" ng-maxlength="20" required>
+          </label>
+          <div class="error-container" ng-show="authorizationForm.username.$error" ng-messages="authorizationForm.username.$error">
+            <div ng-messages-include="error-list.html"></div>
+          </div>
+          <label class="item item-input" ng-class="{ 'has-errors' : authorizationForm.password.$invalid && authorizationForm.$submitted, 'no-errors' : authorizationForm.password.$valid  && authorizationForm.$submitted}">
+            <span class="input-label">Password</span>
+            <input type="password" name="password" ng-model="authorization.password" ng-minlength="5" ng-maxlength="20" required>
+          </label>
+          <div class="error-container last-error-container" ng-show="authorizationForm.password.$error && authorizationForm.$submitted" ng-messages="authorizationForm.password.$error">
+              <div ng-messages-include="error-list.html"></div>
+          </div>
+        </div>
+        <button class="button button-full button-positive" type="submit">
+          Sign In
+        </button>
+      </form>
+    </ion-content>
+  </ion-view>
+</script>
+
+
+
+<script id="error-list.html" type="text/ng-template">
+  <div class="error" ng-message="required">
+    <i class="ion-information-circled"></i>
+    This field is required!
+  </div>
+  <div class="error" ng-message="minlength">
+    <i class="ion-information-circled"></i>
+    Minimum length of this field is 5 characters!
+  </div>
+  <div class="error" ng-message="maxlength">
+    <i class="ion-information-circled"></i>
+    Maximum length of this field is 20 characters!
+  </div>
+</script>
+-->
